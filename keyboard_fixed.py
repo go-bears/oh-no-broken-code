@@ -12,6 +12,7 @@ def get_cat_and_instrument(position):
 	instrument = instruments[position]
 	return "{} plays the {}".format(cat, instrument)
 
+
 # Print out my cat orchestra one by one
 total_cats = len(cats)
 position = 0
@@ -20,7 +21,10 @@ while True:
 	if position >= total_cats:
 		break
 
-print get_cat_and_instrument(position)
-position += 1
+	print get_cat_and_instrument(position)
+	position += 1
+
+
+get_cat_and_instrument(position)
 
 # Could you do the assignment of cats and instruments any other ways?
